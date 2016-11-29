@@ -1,0 +1,10 @@
+{
+    "name": "skygdi/devicetoken",
+    "authors": [
+        {
+            "name": "skygdi",
+            "email": "skygdi83@gmail.com"
+        }
+    ],
+    "require": {}
+}
