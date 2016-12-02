@@ -1,6 +1,4 @@
-<?php
-
-namespace Skygdi\DeviceToken;
+<?php namespace Skygdi\DeviceToken;
 
 use Illuminate\Support\ServiceProvider;
 
