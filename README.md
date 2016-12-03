@@ -10,8 +10,8 @@ Add to config/app.php providers
 
 Usage:
 
-`curl --request POST 'http://127.0.0.1:8000/tapi/login' \
-> --data "email=yourdomain@gmail.com" \
+`curl --request POST 'http://127.0.0.1:8000/tapi/login' \\
+> --data "email=yourdomain@gmail.com" \\
 > --data "password=123456"`
 
 Success login result like that(All Json return):
