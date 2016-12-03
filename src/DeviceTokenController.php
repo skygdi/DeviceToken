@@ -1,6 +1,5 @@
 <?php namespace Skygdi\DeviceToken;
 
-//use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
 use Hash;
@@ -10,11 +9,11 @@ use Auth;
 
 /*
 ##resource get test
-curl --header 'cookies: 1_1fd3356a236ae966de31ea1db8536df8' http://lw.skygdi.com/tapi/get
+curl --header 'cookies: 1_1fd3356a236ae966de31ea1db8536df8' http://yourdomain.com/tapi/get
 
 ##login
-curl --request POST 'http://lw.skygdi.com/tapi/login' \
---data "email=skygdi83@gmail.com" \
+curl --request POST 'http://yourdomain.com/tapi/login' \
+--data "email=youremail@yourdomain.com" \
 --data "password=123456"
 */
 
