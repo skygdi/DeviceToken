@@ -10,9 +10,7 @@ Add to config/app.php providers
 
 Usage:
 
-`curl --request POST 'http://127.0.0.1:8000/tapi/login' \\
-> --data "email=yourdomain@gmail.com" \\
-> --data "password=123456"`
+`curl --request POST 'http://127.0.0.1:8000/tapi/login' --data "email=yourdomain@gmail.com"  --data "password=123456"`
 
 Success login result like that(All Json return):
 
@@ -24,14 +22,14 @@ With the token for coming every requests (the default test route as follow)
 
 You could write your route like that:
 
-`
+
 Route::group(['prefix' => 'tapi', 'middleware' => 'Skygdi\DeviceToken\ApiTokenCheck'], function () {
 	    Route::get('get', function () {
 		    //echo "Current user Email:".Auth::user()->email."\n";
 		});
 	}
 );
-`
+
 
 
 
