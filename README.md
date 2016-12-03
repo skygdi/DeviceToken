@@ -1,22 +1,23 @@
 # DeviceToken
 For some device like mobile or special needed , this is a simple solution:
 
+###Install
+
 `composer require skygdi/devicetoken "dev-master"` 
 
-Add to config/app.php providers
+###Add to config/app.php providers
 
 `Skygdi\DeviceToken\DeviceTokenServiceProvider::class,`
 
-
-### Usage:
+###Usage:
 
 `curl --request POST 'http://127.0.0.1:8000/tapi/login' --data "email=yourdomain@gmail.com"  --data "password=123456"`
 
-Success login result like that(All Json return):
+###Success login result like that(All Json return , copy the token string):
 
 `{"result":"success","token":"1_0c4cdb8a5af4d2df6cb5925473f71f2b"}`
 
-With the token for coming every requests (the default test route as follow)
+###With the token for coming every requests (the default test route as follow)
 
 `curl --header 'cookies: 1_0c4cdb8a5af4d2df6cb5925473f71f2b' http://127.0.0.1:8000/tapi/get`
 
